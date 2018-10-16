@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>EVN SOUTHERN POWER CORPORATION</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+	<!--<script src="https://cdn.rawgit.com/ethereum/web3.js/develop/dist/web3.js"></script>-->
+	<script src="./node_modules/web3/dist/web3.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/ww.jquery.min.js"></script>
+	<script src="js/sweetalert.min.js"></script>
+	<script src="js/user.js"></script>
+	<script src="js/blockchain.js"></script>
+</head>
+<body onload="getTarget()">
+<h1>EVN SOUTHERN POWER CORPORATION</h1>
+<div id="container-provider01">
+	<script type="text/javascript">
+	</script>
+	<!--Waiting form-->
+	<div id="WaitDialog" class="hidden" style="text-align: center">
+		<img src="img/loading_black.gif" />
+		<div style="margin-top: 10px; color: white">
+			<b>Please wait</b>
+		</div>
+	</div>
+	<div id="resource">
+		<table>
+			<tr>
+				<td>
+					<p>Contract No.</p>
+				</td>
+				<td>
+					<input type="input" id="contract_no"/>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p>Choose the object to access</p>
+				</td>
+				<td>
+					<select id="targets" class="selector" onchange="onChangeTargets()"></select>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p>Which resource do you want to access?</p>
+				</td>
+				<td>
+					<select id="resources" class="selector" onchange="onChangeResources()"></select>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p>What action do you want to execute?</p>
+				</td>
+				<td>
+					<select id="actions" class="selector" onchange="onChangeActions()"></select>
+					<select id="level">
+					  <option value="High">High</option>
+					  <option value="Medium">Medium</option>
+					  <option value="Low">Low</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				</td>
+				<td>
+					<button type="button" onclick="sendRequest()">Send</button>
+				</td>
+			</tr>
+		</table>
+		<p class="title_content">Access result from Smart Home</p>
+		<textarea id="textarea_user01" class="textarea_result">
+Contract: ...
+Block Number:...
+Tx Hash:...
+Block Hash:...
+Time: ...
+Message:
+Result:...
+		</textarea>
+	</div>
+</div>
+</body>
+</html>

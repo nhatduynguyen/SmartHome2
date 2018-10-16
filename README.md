@@ -1,1 +1,1 @@
-SmartHome2
+SmartHome

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Smart Home of Mr. Nhat Dang</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+	<!--<script src="https://cdn.rawgit.com/ethereum/web3.js/develop/dist/web3.js"></script>-->
+	<script src="./node_modules/web3/dist/web3.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/ww.jquery.min.js"></script>
+	<script src="js/sweetalert.min.js"></script>
+	<script src="js/smarthome.js"></script>
+	<script src="js/blockchain.js"></script>
+</head>
+
+
+<body>
+<h1>Smart Home</h1>
+
+<script>
+  $(function () {
+		/*
+    var socket = io();
+    socket.on('event_user', function(msg, addr){
+      console.log('Event user responded:' + msg);
+      var textarea_event_user = document.getElementById('event_user');
+      textarea_event_user.value += msg;
+      textarea_event_user.scrollTop = textarea_event_user.scrollHeight;
+    });
+		*/
+		initSmartHomeToBC();
+  });
+</script>
+<div id="container-smarthome01">
+	<div id="resource">
+		<textarea class="textarea_result2" id="event_user"></textarea>
+	</div>
+</div>
+</body>
+</html>

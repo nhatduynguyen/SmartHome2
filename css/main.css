@@ -1,0 +1,113 @@
+body {
+	background-color: #E2E2E2;
+	font-family: arial, sans-serif;
+}
+
+h1 {
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+table {
+	border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #f9fbff;
+}
+
+tr:nth-child(odd) {
+    background-color: #FFFFFF;
+}
+
+#container-user01 {
+	margin: auto;
+    width: 800px;
+	border-style: ridge;
+	padding: 20px;
+	background-color: #FFD966;
+}
+
+#container-user02 {
+	margin: auto;
+    width: 800px;
+	border-style: ridge;
+	padding: 20px;
+	background-color: #FF1493;
+}
+
+#container-user03 {
+	margin: auto;
+    width: 800px;
+	border-style: ridge;
+	padding: 20px;
+	background-color: #FF8C00;
+}
+
+
+#container-provider01 {
+	margin: auto;
+    width: 800px;
+	border-style: ridge;
+	padding: 20px;
+	background-color: #FF0000;
+}
+
+#container-provider02 {
+	margin: auto;
+    width: 800px;
+	border-style: ridge;
+	padding: 20px;
+	background-color: #1E90FF;
+}
+
+#container-smarthome01 {
+	margin: auto;
+    width: 800px;
+	border-style: ridge;
+	padding: 20px;
+	background-color: #228B22;
+}
+
+#container-smarthome02 {
+	margin: auto;
+    width: 800px;
+	border-style: ridge;
+	padding: 20px;
+	background-color: #ED8A45;
+}
+
+.selector {
+	width: 200px;
+}
+
+.title_content {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.textarea_result {
+	width: 100%;
+	height: 200px;
+	padding: 5px;
+}
+
+.textarea_result2 {
+	width: 100%;
+	height: 500px;
+}
